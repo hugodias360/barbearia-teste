@@ -1,0 +1,42 @@
+﻿@model Barbearia.Models.ESTOQUE
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ESTOQUE</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PRODUTO.NOME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRODUTO.NOME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QUANTIDADE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QUANTIDADE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VALIDADE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VALIDADE)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

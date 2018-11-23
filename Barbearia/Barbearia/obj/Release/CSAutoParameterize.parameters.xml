@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Model1-Web.config Connection String" description="Model1 A Cadeia de Conexão usada em web.config pelo aplicativo para acessar o banco de dados." defaultValue="data source=DESKTOP-EUVG7SI;initial catalog=BARBEARIA;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Hugo\\Documents\\Projetos\\C\#\\Barbearia\\Barbearia\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Model1']/@connectionString" />
+  </parameter>
+  <parameter name="Model11-Web.config Connection String" description="Model11 A Cadeia de Conexão usada em web.config pelo aplicativo para acessar o banco de dados." defaultValue="data source=DESKTOP-EUVG7SI;initial catalog=BARBEARIA;integrated security=True;multipleactiveresultsets=True;application name=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Hugo\\Documents\\Projetos\\C\#\\Barbearia\\Barbearia\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Model11']/@connectionString" />
+  </parameter>
+  <parameter name="Model12-Web.config Connection String" description="Model12 A Cadeia de Conexão usada em web.config pelo aplicativo para acessar o banco de dados." defaultValue="data source=DESKTOP-EUVG7SI;initial catalog=BARBEARIA2;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Hugo\\Documents\\Projetos\\C\#\\Barbearia\\Barbearia\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Model12']/@connectionString" />
+  </parameter>
+  <parameter name="Model13-Web.config Connection String" description="Model13 A Cadeia de Conexão usada em web.config pelo aplicativo para acessar o banco de dados." defaultValue="data source=DESKTOP-EUVG7SI;initial catalog=BARBEARIA3;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Hugo\\Documents\\Projetos\\C\#\\Barbearia\\Barbearia\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Model13']/@connectionString" />
+  </parameter>
+</parameters>

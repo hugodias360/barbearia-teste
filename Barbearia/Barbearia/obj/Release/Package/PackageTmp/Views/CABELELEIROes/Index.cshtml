@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Barbearia.Models.CABELELEIRO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card bootstrap-table">
+                    <div class="card card-header">
+                        <h2>Consulta Cabeleleiros</h2>
+                        <a href="@Url.Action("Create", "CABELELEIROes")" class="btn btn-success col-md-2">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            Cadastrar
+                        </a>
+                    </div>
+                    <div class="card-body table-full-width">
+                        <div class="toolbar">
+                            <!--        Here you can write extra buttons/actions for the toolbar              -->
+                        </div>
+                        <table id="bootstrap-table" class="table">
+                            <thead>
+                                <tr>
+                                    <th data-field="state" data-checkbox="true"></th>
+                                    <th data-field="id" class="text-center">ID</th>
+                                    <th data-field="nome" data-sortable="true">Nome</th>
+                                    <th data-field="senha" data-sortable="true">Senha</th>
+                                    <th data-field="email" data-sortable="true">Email</th>
+                                    <th data-field="celular">Celular</th>
+                                    <th data-field="actions">Açes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.ID)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.NOME)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.SENHA)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.EMAIL)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.CELULAR)
+                                        </td>
+                                        <td>
+                                            <a title="View" href="@Url.Action("Details", "CABELELEIROes",  new { id = item.ID } )" class="btn btn-link btn-info table-action view">
+                                                <i class="fa fa-image"></i>
+                                            </a>
+
+                                            <a title="Edit" href="@Url.Action("Edit", "CABELELEIROes",  new { id = item.ID } )" class="btn btn-link btn-warning table-action view">
+                                                <i class="fa fa-edit"></i>
+                                            </a>
+
+                                            <a title="Remove" href="@Url.Action("Delete", "CABELELEIROes",  new { id = item.ID } )" class="btn btn-link btn-danger table-action view">
+                                                <i class="fa fa-remove"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
